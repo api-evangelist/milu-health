@@ -1,7 +1,30 @@
 aid: milu-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/milu-health.png
 name: Milu Health
-description: Milu Health is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Milu Health is a health technology company that pairs a virtual care team with
+  an AI engine to help employees and their families get higher-quality healthcare
+  at a lower cost. Founded in 2023 by Sasha Gribov and Gautam Kumar, Milu integrates
+  directly with electronic health record (EHR) data from tens of thousands of
+  provider groups and health systems to proactively flag medication issues, care
+  gaps, fairly priced and high-quality doctors, incorrect medical bills, and more
+  affordable medications. The platform also ingests an employer's health plan and
+  benefits so it can notify members when an existing benefit could help. Milu is
+  offered through employers and benefits advisors as well as directly to
+  individuals. The company raised a $4.8M seed round led by a16z Bio + Health in
+  March 2024. This profile was added to the API Evangelist network as an a16z
+  portfolio company; Milu does not currently publish a public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/milu-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Health
+- Healthcare
+- Digital Health
+- Health Savings
+- Artificial Intelligence
+- Employee Benefits
+- Electronic Health Records
 apis: []
+common:
+- type: DomainSecurity
+  url: security/milu-health-domain-security.yml
+- type: Website
+  url: https://www.miluhealth.com/
+- type: About
+  url: https://www.miluhealth.com/about
+- type: Support
+  url: https://www.miluhealth.com/contact
+- type: SignUp
+  url: https://app.miluhealth.com/login
+- type: PrivacyPolicy
+  url: https://www.miluhealth.com/legal/privacy-policy
+- type: TermsOfService
+  url: https://www.miluhealth.com/legal/terms-and-conditions
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
